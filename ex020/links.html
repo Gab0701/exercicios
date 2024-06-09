@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    /* Seletores Personalizados
+     #  = id
+     .  = class
+     :  = pseudo-class
+     :: = pseudo-element
+     >  = clildren
+    */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}  /*target="_blank" significa para vc abrir outra aba ao clicar no item*/
+a{
+    color:red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited {                  /*a:visited é quando o site já foi visitado */
+    color:darkred;
+}
+a:hover{                     /*a:hover é quando vc passa o mouse em cima dos itens*/
+    color:black;
+    text-decoration: underline;
+}
+a:active{                    /*a:active é quando vc clica no site */
+    color: yellow;
+}
+.especial{     /*é criada por uma class onde vc pode alterar só ela*/
+    background-color: rgb(240, 98, 98);
+}
+.especial::before{ /*before é oq vem antes da palavra pode-se colocar imagens*/
+ content:'➞';   
+}
+.especial::after{ /*after é oq vem depois da palavra*/
+    content: '🠔';
+}
+</style>
+<body>    
+    <h1>Personalização de Links</h1>
+    <ul>
+    <li><a href="https://github.com/Gab0701" target="_blank">Repositorio GitHub</a></li>
+    <li><a href="https://www.youtube.com/channel/UCoxVPrmRiLvrXffpJNE-yJg" target="_blank" class="especial">Canal do YouTube</a></li>
+    <li><a href="https://www.coca-cola.com.br/" target="_blank">Site Coca-Cola</a></li>
+</ul>
+</body>
+</html>
